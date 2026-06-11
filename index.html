@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RunRecords</title>
+  <meta name="description" content="RunRecords — on-device workout analytics from Apple Health. Privacy policy and support.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="./">RunRecords</a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="privacy/">Privacy</a>
+        <a href="support/">Support</a>
+        <a href="impressum/">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <div class="hero">
+        <h1>RunRecords</h1>
+        <p>Workout analytics from Apple Health — computed on your iPhone. No account, no cloud sync.</p>
+      </div>
+
+      <div class="card-grid">
+        <a class="card-link" href="privacy/">
+          <span class="card-link__title">Privacy Policy</span>
+          <p class="card-link__desc">What health data the app accesses, how it is used, and what we do not collect.</p>
+        </a>
+        <a class="card-link" href="support/">
+          <span class="card-link__title">Support</span>
+          <p class="card-link__desc">Contact us for help, bug reports, feedback, or feature requests.</p>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="privacy/">Privacy</a> &middot;
+      <a href="support/">Support</a> &middot;
+      <a href="impressum/">Impressum</a>
+      &middot; &copy; <span id="year"></span> RunRecords
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
