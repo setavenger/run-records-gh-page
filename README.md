@@ -4,10 +4,10 @@ Static GitHub Pages site for RunRecords (privacy, support, Impressum). Hosted fr
 
 | Page | Path | URL |
 |------|------|-----|
-| Home | `/` | `https://runrecords.app/` |
-| Privacy | `/privacy/` | `https://runrecords.app/privacy` |
-| Support | `/support/` | `https://runrecords.app/support` |
-| Impressum | `/impressum/` | `https://runrecords.app/impressum` |
+| Home | `/` | `https://info.runrecords.app/` |
+| Privacy | `/privacy/` | `https://info.runrecords.app/privacy` |
+| Support | `/support/` | `https://info.runrecords.app/support` |
+| Impressum | `/impressum/` | `https://info.runrecords.app/impressum` |
 
 ## Deploy on GitHub Pages
 
@@ -22,16 +22,18 @@ Deployment is automated by [`.github/workflows/pages.yml`](.github/workflows/pag
 
 ### Custom domain
 
-Domain: **`runrecords.app`** (`CNAME` in repo root).
+Site domain: **`info.runrecords.app`** (`CNAME` in repo root).
 
-1. Add `runrecords.app` under **Settings → Pages → Custom domain**.
-2. Point DNS at your registrar to GitHub Pages (A/AAAA for apex, or CNAME for `www`).
+1. Add `info.runrecords.app` under **Settings → Pages → Custom domain**.
+2. At Namecheap (Advanced DNS for `runrecords.app`):
+   - **CNAME** — Host `info` → `setavenger.github.io`
+   - **URL Redirect** — Host `@` → `https://info.runrecords.app` (permanent / unmasked), so `runrecords.app` forwards to the site
 3. Enable **Enforce HTTPS** after DNS propagates.
 
 App Store Connect:
 
-- **Privacy Policy URL:** `https://runrecords.app/privacy`
-- **Support URL:** `https://runrecords.app/support`
+- **Privacy Policy URL:** `https://info.runrecords.app/privacy`
+- **Support URL:** `https://info.runrecords.app/support`
 
 ## Local preview
 
